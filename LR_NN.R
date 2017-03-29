@@ -57,7 +57,7 @@ lm_solo_result<-predict(object = lm_model,newdata = common_test,type = "response
 lm_hybrid_result<-ifelse(lm_hybrid_result >= 0.5,1,0)
 lm_solo_result<-ifelse(lm_solo_result >= 0.5,1,0)
 
-#Inspect crosstable (hybrid)
+#Inspect crosstable
 CrossTable(x = lm_hybrid_test$rating,y = lm_hybrid_result,chisq = F)
 
 ########################################################################
