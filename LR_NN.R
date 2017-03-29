@@ -6,7 +6,7 @@ set.seed(1024)
 # Data pre-processing
 #################################################################
 #Read credit assessment data
-credit<-read.table("/home/udbhav/Desktop/german.data")
+credit<-read.table("[path-here]/german.data")
 str(credit)
 
 #Assign column names
