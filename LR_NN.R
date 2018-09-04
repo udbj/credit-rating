@@ -45,7 +45,7 @@ common_test<-credit[701:1000,]
 # LM
 ####################################################################
 
-#Train logistical regression model
+#Train logistic regression model
 lm_model <- glm(rating ~.,data=single_train,family = binomial(link = "logit") )
 summary(lm_model)
 
